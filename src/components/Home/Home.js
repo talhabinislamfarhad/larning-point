@@ -3,7 +3,7 @@ import React from 'react';
 import './Home.css';
 // FontAwesome Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faBook, faBookOpen, faBookReader, faUser } from '@fortawesome/free-solid-svg-icons';
 // All Components
 import Service from '../Service/Service';
 // Image
@@ -13,6 +13,9 @@ import { Button, Row } from 'react-bootstrap';
 const Home = (props) => {
     const { services } = props;
     const userIcon = <FontAwesomeIcon icon={faUser} />
+    const bookIcon = <FontAwesomeIcon icon={faBook} />
+    const bookOpen = <FontAwesomeIcon icon={faBookOpen} />
+    const bookReader = <FontAwesomeIcon icon={faBookReader} />
     return (
         <section className="header-section">
             <div className="container mt-5 home">
@@ -32,6 +35,7 @@ const Home = (props) => {
                     </div>
                 </div>
             </div>
+            {/* Services section */}
             <div className="container-fluid">
                 <h1 className="mt-3 mb-5 p-1">Our Services</h1>
                 <Row xs={1} md={2} lg={4} className="g-1">
@@ -40,6 +44,37 @@ const Home = (props) => {
                         </Service>)
                     }
                 </Row>
+            </div>
+            {/* card section */}
+            <div className="cards-section mt-5 mb-5 pt-5 pb-5">
+                <div className="container">
+                    <div className="row g-4">
+                        <div className="col-md-6 col-lg-3 col-sm-6">
+                            <div className="cards-inner ">
+                                <span className="fs-1">{bookIcon}</span>
+                                <h5>1500+ Topic</h5>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-3 col-sm-6">
+                            <div className="cards-inner">
+                                <span className="fs-1">{bookOpen}</span>
+                                <h5>1200+ Lessons</h5>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-3 col-sm-6">
+                            <div className="cards-inner">
+                                <span className="fs-1">{bookReader}</span>
+                                <h5>9K+ Test Token</h5>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-3 col-sm-6">
+                            <div className="cards-inner">
+                                <span className="fs-1">{userIcon}</span>
+                                <h5>2000+ Student</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
