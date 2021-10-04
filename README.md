@@ -2,7 +2,7 @@
 
 ## Described the project below with some bullet points
 
-* Live Website Link
+* Live Website Link:
 [https://learning-point-farhad.netlify.app](https://learning-point-farhad.netlify.app)
 
 * The website is about Education e-commerce. 
