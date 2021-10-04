@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Route, Switch } from "react-router";
@@ -11,21 +11,26 @@ import NotFound from "./components/NotFound/NotFound";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 
-
 function App() {
+  const [services, setStudents] = useState([]);
+  useEffect(() => {
+    fetch('./Services.json')
+      .then(res => res.json())
+      .then(data => setStudents(data))
+  }, []);
   return (
     <div className="App">
       <Router>
         <Header></Header>
         <Switch>
           <Route exact path="/">
-            <Home></Home>
+            <Home services={services}></Home>
           </Route>
           <Route exact path="/home">
-            <Home></Home>
+            <Home services={services}></Home>
           </Route>
           <Route exact path="/services">
-            <Services></Services>
+            <Services services={services}></Services>
           </Route>
           <Route exact path="/about">
             <About></About>

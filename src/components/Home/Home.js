@@ -3,9 +3,11 @@ import './Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
 import banner from '../../../src/images/banner-1.jpg';
-import { Button } from 'react-bootstrap';
+import { Button, Row } from 'react-bootstrap';
+import Service from '../Service/Service';
 
-const Home = () => {
+const Home = (props) => {
+    const { services } = props;
     const userIcon = <FontAwesomeIcon icon={faUser} />
     return (
         <section className="header-section">
@@ -14,8 +16,8 @@ const Home = () => {
                     <div className="col-md-12 col-lg-6">
                         <div className="header-details mt-5">
                             <h6>Are you ready to Learn?</h6>
-                            <h1>The World's Leading Distance-Learning Provider </h1>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi nobis sequi aliquam consectetur officia iusto vitae nesciunt quaerat pariatur consequatur.</p>
+                            <h1>Welcome to LearningPoint: Where IT Leaders are Created </h1>
+                            <p>LearningPoint, one of the leading IT training institutes in Bangladesh offers the best training opportunities. It has been playing a vital role to eradicate the unemployment problem since 2010.</p>
                             <Button variant="success" className="get-btn">{userIcon}  Admission Going On</Button>
                         </div>
                     </div>
@@ -26,9 +28,14 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="container">
-
-
+            <div className="container-fluid">
+                <h1 className="mt-3 mb-5 p-1">Our Services</h1>
+                <Row xs={1} md={2} lg={4} className="g-1">
+                    {
+                        services.slice(0, 4).map(service => <Service key={service.id} service={service}>
+                        </Service>)
+                    }
+                </Row>
             </div>
         </section>
 
