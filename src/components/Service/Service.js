@@ -25,7 +25,7 @@ const Service = (props) => {
                         <Card.Text>{certificationIcon} Certification: {certification}</Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                        <div className="d-flex flex-column flex-md-row justify-content-between card-footer-area mx-3 my-3">
+                        <div className="d-flex flex-column flex-md-row justify-content-between card-footer-area text-center mx-3 my-3">
                             <h5> Price: {price}{priceIcon}</h5>
                             <Button variant="outline-success">{enrollIcon} Enroll Now</Button>
                         </div>
