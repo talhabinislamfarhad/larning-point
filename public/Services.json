@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "name": "HTML 5 Course",
+        "duration": "3 months",
+        "TotalClass": 72,
+        "price": 3000,
+        "certification": "Yes",
+        "img": "https://github.com/talhabinislamfarhad/imgs/blob/main/html.png?raw=true"
+    },
+    {
+        "id": 2,
+        "name": "CSS3 Course",
+        "duration": "2 months",
+        "TotalClass": 48,
+        "price": 4000,
+        "certification": "Yes",
+        "img": "https://github.com/talhabinislamfarhad/imgs/blob/main/css.jpg?raw=true"
+    },
+    {
+        "id": 3,
+        "name": "Bootstrap 5 Course",
+        "duration": "3 months",
+        "TotalClass": 70,
+        "price": 5000,
+        "certification": "Yes",
+        "img": "https://github.com/talhabinislamfarhad/imgs/blob/main/bootstrap.png?raw=true"
+    },
+    {
+        "id": 4,
+        "name": "JavaScript Course",
+        "duration": "6 months",
+        "TotalClass": 120,
+        "price": 10000,
+        "certification": "Yes",
+        "img": "https://github.com/talhabinislamfarhad/imgs/blob/main/js.jpg?raw=true"
+    },
+    {
+        "id": 5,
+        "name": "React JS Course",
+        "duration": "4 months",
+        "TotalClass": 99,
+        "price": 12000,
+        "certification": "Yes",
+        "img": "https://github.com/talhabinislamfarhad/imgs/blob/main/react.png?raw=true"
+    },
+    {
+        "id": 6,
+        "name": "Node JS Course",
+        "duration": "5 months",
+        "TotalClass": 126,
+        "price": 14000,
+        "certification": "Yes",
+        "img": "https://github.com/talhabinislamfarhad/imgs/blob/main/node-js.jpeg?raw=true"
+    },
+    {
+        "id": 7,
+        "name": "MangoDB Course",
+        "duration": "3 months",
+        "TotalClass": 71,
+        "price": 9000,
+        "certification": "Yes",
+        "img": "https://github.com/talhabinislamfarhad/imgs/blob/main/mongodb.png?raw=true"
+    },
+    {
+        "id": 8,
+        "name": "ExpressJS Course",
+        "duration": "4 months",
+        "TotalClass": 105,
+        "price": 11000,
+        "certification": "Yes",
+        "img": "https://github.com/talhabinislamfarhad/imgs/blob/main/express.png?raw=true"
+    },
+    {
+        "id": 9,
+        "name": "AngularJS Course",
+        "duration": "6 months",
+        "TotalClass": 148,
+        "price": 15000,
+        "certification": "Yes",
+        "img": "https://github.com/talhabinislamfarhad/imgs/blob/main/angular.png?raw=true"
+    }
+]
