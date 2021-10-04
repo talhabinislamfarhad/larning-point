@@ -7,6 +7,7 @@ import './Header.css';
 const header = () => {
     return (
         <div>
+            {/* Header Navbar */}
             <Navbar collapseOnSelect expand="lg" bg="success" variant="dark">
                 <Container>
                     <Navbar.Brand>LarningPoint</Navbar.Brand>

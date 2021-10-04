@@ -17,7 +17,9 @@ const Home = (props) => {
     const bookOpen = <FontAwesomeIcon icon={faBookOpen} />
     const bookReader = <FontAwesomeIcon icon={faBookReader} />
     return (
-        <section className="header-section">
+        // 
+        <section className="home-section">
+            {/* Banner Section */}
             <div className="container mt-5 home">
                 <div className="row">
                     <div className="col-md-12 col-lg-6">

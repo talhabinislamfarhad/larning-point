@@ -8,6 +8,7 @@ import './Contact.css';
 const Contact = () => {
     return (
         <div>
+            {/* Contact Form */}
             <div className="container text-start mt-5">
                 <div className="row">
                     <div className="col-md-6 mx-auto">
@@ -34,9 +35,6 @@ const Contact = () => {
                                 <Form.Control as="textarea" rows={3} />
                             </Form.Group>
 
-                            <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                <Form.Check type="checkbox" label="Check me out" />
-                            </Form.Group>
                             <Button onClick={(event) => {
                                 event.preventDefault();
                             }} variant="success" type="submit">
