@@ -1,17 +1,12 @@
-import React, { useEffect, useState } from 'react';
+
 import { Row } from 'react-bootstrap';
 // All Components
 import Service from '../Service/Service';
 // CSS
 import './Services.css';
 
-const Services = () => {
-    const [services, setStudents] = useState([]);
-    useEffect(() => {
-        fetch('./Services.json')
-            .then(res => res.json())
-            .then(data => setStudents(data))
-    }, []);
+const Services = (props) => {
+    const { services } = props;
     return (
         <div className="container-fluid mt-2 pt-5">
             <h1 className="mt-3 p-1">Our Services</h1>
