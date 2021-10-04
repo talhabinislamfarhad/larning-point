@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Row } from 'react-bootstrap';
+// All Components
 import Service from '../Service/Service';
+// CSS
 import './Services.css';
 
 const Services = () => {

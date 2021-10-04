@@ -1,7 +1,9 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import './NotFound.css';
+// Image
 import notFound from '../../../src/images/404-not-found.jpg';
+// CSS
+import './NotFound.css';
 
 const NotFound = () => {
     return (

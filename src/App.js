@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from "react";
+// Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
+// CSS 
 import './App.css';
+// Router
 import { Route, Switch } from "react-router";
 import { BrowserRouter as Router } from "react-router-dom";
+// All Components
 import Home from "./components/Home/Home";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";

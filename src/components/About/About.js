@@ -1,9 +1,13 @@
 import React from 'react';
-import './About.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBookOpen } from '@fortawesome/free-solid-svg-icons'
-import aboutimg from '../../../src/images/banner.png';
 import { Button } from 'react-bootstrap';
+// CSS
+import './About.css';
+// FontAwesome Icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBookOpen } from '@fortawesome/free-solid-svg-icons';
+// Image
+import aboutimg from '../../../src/images/banner.png';
+
 
 const About = () => {
     const readIcon = <FontAwesomeIcon icon={faBookOpen} />

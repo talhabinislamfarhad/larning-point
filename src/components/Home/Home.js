@@ -1,10 +1,14 @@
 import React from 'react';
+// CSS
 import './Home.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser } from '@fortawesome/free-solid-svg-icons'
+// FontAwesome Icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+// All Components
+import Service from '../Service/Service';
+// Image
 import banner from '../../../src/images/banner-1.jpg';
 import { Button, Row } from 'react-bootstrap';
-import Service from '../Service/Service';
 
 const Home = (props) => {
     const { services } = props;
