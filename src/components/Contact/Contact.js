@@ -37,8 +37,10 @@ const Contact = () => {
                             <Form.Group className="mb-3" controlId="formBasicCheckbox">
                                 <Form.Check type="checkbox" label="Check me out" />
                             </Form.Group>
-                            <Button variant="success" type="submit">
-                                Submit
+                            <Button onClick={(event) => {
+                                event.preventDefault();
+                            }} variant="success" type="submit">
+                                Send
                             </Button>
                         </Form>
                     </div>
