@@ -1,0 +1,10 @@
+#card-header{
+    color: #198754;
+    font-size: 25px;
+}
+#card-footer{
+    align-items: center;
+}
+#card-footer h5{
+    color: #198754;
+}

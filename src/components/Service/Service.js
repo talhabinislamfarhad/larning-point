@@ -4,10 +4,11 @@ import { Button, Card, Container } from 'react-bootstrap';
 import './Service.css';
 // FontAwesome Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faClock, faDollarSign, faGraduationCap, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faBriefcase, faClock, faDollarSign, faGraduationCap, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 const Service = (props) => {
     const clockIcon = <FontAwesomeIcon icon={faClock} />
+    const briefcaseIcon = <FontAwesomeIcon icon={faBriefcase} />
     const certificationIcon = <FontAwesomeIcon icon={faGraduationCap} />
     const enrollIcon = <FontAwesomeIcon icon={faShoppingCart} />
     const priceIcon = <FontAwesomeIcon icon={faDollarSign} />
@@ -18,14 +19,14 @@ const Service = (props) => {
             <Container>
                 <Card className="shadow mb-3">
                     <Card.Img variant="top" /> <img className="p-3 course-img" src={img} alt={name} />
-                    <Card.Header>{name}</Card.Header>
+                    <Card.Header id="card-header">{name}</Card.Header>
                     <Card.Body>
                         <Card.Text>{clockIcon} Duration: {duration}</Card.Text>
-                        <Card.Text>Total Class: {TotalClass}</Card.Text>
+                        <Card.Text>{briefcaseIcon} Total Class: {TotalClass}</Card.Text>
                         <Card.Text>{certificationIcon} Certification: {certification}</Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                        <div className="d-flex flex-column flex-md-row justify-content-between card-footer-area text-center mx-3 my-3">
+                        <div className="d-flex flex-column flex-md-row justify-content-between card-footer-area mx-3 my-3" id="card-footer">
                             <h5> Price: {price}{priceIcon}</h5>
                             <Button variant="outline-success">{enrollIcon} Enroll Now</Button>
                         </div>
