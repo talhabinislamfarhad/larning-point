@@ -8,7 +8,7 @@ const header = () => {
     return (
         <div>
             {/* Header Navbar */}
-            <Navbar collapseOnSelect expand="lg" bg="success" variant="dark" className="fixed-top">
+            <Navbar collapseOnSelect expand="lg" bg="success" variant="dark">
                 <Container>
                     <Navbar.Brand><NavLink className="nav-link text-white" to="/home">LarningPoint</NavLink></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
