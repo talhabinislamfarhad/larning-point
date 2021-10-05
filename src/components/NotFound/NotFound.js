@@ -1,9 +1,11 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 // Image
-import notFound from '../../../src/images/404-not-found.jpg';
+import notFound from '../../../src/images/404.PNG';
 // CSS
 import './NotFound.css';
+import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const NotFound = () => {
     return (
@@ -15,6 +17,9 @@ const NotFound = () => {
                     className="d-inline-block align-top"
                     alt="learn-point-logo"
                 />
+                <Link to="/">
+                    <Button variant="success">BACK TO HOME</Button>
+                </Link>
             </Container>
         </div>
     );
